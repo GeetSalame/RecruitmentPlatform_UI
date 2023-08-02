@@ -10,10 +10,10 @@ function Herosec() {
     useEffect(() => {
         const typed = new Typed(typedText.current, {
             strings: ["Software Engineers", "Product Managers", "Data Scientists"],
-            startDelay: 300,
-            typeSpeed: 150,
-            backDelay: 250,
-            backSpeed: 150,
+            startDelay: 100,
+            typeSpeed: 50,
+            backDelay: 100,
+            backSpeed: 50,
             fadeOutDelay: 500,
             smartBackspace: true,
             showCursor: false,

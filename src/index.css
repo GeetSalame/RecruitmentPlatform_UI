@@ -7,6 +7,7 @@ font-family: 'Roboto', sans-serif; */
 
 :root {
   --theme-pri: #004E92;
+  --theme-pri-shadow: #004e9257;
   --theme-sec: #FF6B00;
   --theme-ter: #00743F;
   --theme-bg: #F8F8F8;
@@ -64,4 +65,8 @@ font-family: 'Roboto', sans-serif; */
 
 body {
   background: var(--theme-bg);
+}
+
+.list li{
+  list-style: none;
 }

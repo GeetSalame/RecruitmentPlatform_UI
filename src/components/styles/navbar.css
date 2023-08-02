@@ -18,7 +18,7 @@
 }
 
 .add-shadow{
-    box-shadow: 0px 0px 15px silver;
+    box-shadow: 0px 0px 15px var(--theme-pri-shadow);
 }
 
 #headlinks>ul{
