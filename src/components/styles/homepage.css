@@ -2,11 +2,14 @@
     border: 2px solid red;
 
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     /* padding-top: var(--nav-height); */
 }
+
+/*------------------------------------ hero section */
 
 #herosec>*, #herosec>*>*{
     /* border: 2px solid blue; */
@@ -45,4 +48,39 @@
     justify-content: center;
     align-items: center;
     translate: -50px;
+}
+
+
+/* ----------------------------------------------------- Whyus sec */
+#whyusSec{
+    width: 100vw;
+}
+
+#whyusNums{
+    /* height: 300px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding: 50px;
+}
+
+.numCards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    box-shadow: 0px 0px 15px silver;
+    border-radius: 5px;
+    width: 300px;
+    height: 200px;
+}
+.numCards:hover{
+    /* transform: scale(1.1); */
+}
+
+.numCards span{
+    font-size: 50px;
+    color: var(--theme-pri);
 }
