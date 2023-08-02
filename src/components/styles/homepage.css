@@ -1,0 +1,9 @@
+#homepage {
+    border: 2px solid red;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* padding-top: var(--nav-height); */
+}
