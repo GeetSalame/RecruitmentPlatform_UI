@@ -1,0 +1,42 @@
+import React, { useEffect, useRef } from 'react';
+import '../../styles/homepage.css';
+import Typed from 'typed.js';
+import heroImg from '../../../img/hero-img.png'
+
+
+function Herosec() {
+    const typedText = useRef(null);
+
+    useEffect(() => {
+        const typed = new Typed(typedText.current, {
+            strings: ["Software Engineers", "Product Managers", "Data Scientists"],
+            startDelay: 300,
+            typeSpeed: 150,
+            backDelay: 250,
+            backSpeed: 150,
+            fadeOutDelay: 500,
+            smartBackspace: true,
+            showCursor: false,
+            loop: true,
+        });
+    }, [])
+
+    return (
+        <div id='herosec'>
+            <div id="heroLeft">
+                <h1><span style={{ color: "var(--theme-pri)" }}>Recruit</span> the best</h1>
+                <h1>among <span ref={typedText} style={{ color: "var(--theme-pri)" }}></span></h1>
+                <p>where you find the perfect worker</p>
+                <div id="hero-cta">
+                    <button className='btn'>Hire Now</button>
+                    <button className='btn2'>Find Job</button>
+                </div>
+            </div>
+            <div id="heroRight">
+                <img src={heroImg} alt="Recruit" />
+            </div>
+        </div>
+    )
+}
+
+export default Herosec;

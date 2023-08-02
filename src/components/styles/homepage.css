@@ -7,3 +7,42 @@
     min-height: 100vh;
     /* padding-top: var(--nav-height); */
 }
+
+#herosec>*, #herosec>*>*{
+    /* border: 2px solid blue; */
+}
+
+#herosec{
+    border: 2px solid blue;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+}
+
+#heroLeft{
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: x-large;
+    width: 630px;
+}
+
+#hero-cta{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+#heroRight{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    translate: -50px;
+}

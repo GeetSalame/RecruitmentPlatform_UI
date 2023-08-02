@@ -2,6 +2,16 @@ import React from 'react';
 import '../styles/navbar.css';
 
 function Navbar() {
+
+    window.addEventListener('scroll', (e) => {
+        const nav = document.querySelector('#navbar');
+        if (window.scrollY > 0) {
+            nav.classList.add("add-shadow");
+        } else {
+            nav.classList.remove("add-shadow");
+        }
+    });
+
     return (
         <div id='navbar'>
             <h1 className="heading">Recruit</h1>

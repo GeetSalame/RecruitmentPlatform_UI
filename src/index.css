@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Raleway&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Poppins&family=Raleway&family=Roboto&display=swap');
 
 /* font-family: 'Montserrat', sans-serif;
 font-family: 'Open Sans', sans-serif;
@@ -21,39 +21,47 @@ font-family: 'Roboto', sans-serif; */
   box-sizing: border-box;
   font-family: 'Raleway', sans-serif;
   letter-spacing: .05rem;
-  
+
   transition: all .2s ease;
   scroll-behavior: smooth;
 }
 
-.heading{
+.heading {
   font-family: 'Montserrat', sans-serif;
   color: var(--theme-pri);
 }
 
-.subheading{
+.subheading {
   font-family: 'Open Sans', sans-serif;
 }
 
-.bodytext{
+.bodytext {
   font-family: 'Roboto', sans-serif;
   color: var(--theme-text);
 }
 
-.btn, .btn2:hover{
+.btn,
+.btn2:hover {
   color: var(--theme-pri);
   font-weight: bold;
-  background: white;
+  background: transparent;
   border: 2px solid var(--theme-pri);
+  border-radius: 5px;
+  padding: 10px 30px;
+  font-family: 'Raleway', sans-serif;
 }
 
-.btn2, .btn:hover{
+.btn2,
+.btn:hover {
   color: white;
   font-weight: bold;
   background: var(--theme-pri);
   border: 2px solid var(--theme-pri);
+  border-radius: 5px;
+  padding: 10px 30px;
+  font-family: 'Raleway', sans-serif;
 }
 
-body{
+body {
   background: var(--theme-bg);
 }
