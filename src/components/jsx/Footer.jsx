@@ -6,7 +6,7 @@ function Footer() {
         <div id='footer'>
             <div id='footerUp'>
                 <div id='footerULeft'>
-                    <h1 className="heading">Recruit</h1>
+                    <h1 className="heading">RecruIt</h1>
                     <ul id='footerLinks'>
                         <li><img src="https://cdn-icons-png.flaticon.com/512/733/733635.png" alt="twitter" /></li>
                         <li><img src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png" alt="linkedin" /></li>

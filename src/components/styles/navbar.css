@@ -1,48 +1,148 @@
-#navbar{
+#navbar {
     /* border: 2px solid red; */
-    
+
     position: fixed;
     top: 0px;
     left: 0;
     height: var(--nav-height);
     width: 100vw;
     z-index: 100;
-    padding: 30px 0;
-    
+    padding: 30px 50px;
+
     background-color: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(2px);
 
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
-.add-shadow{
+.add-shadow {
     box-shadow: 0px 0px 15px var(--theme-pri-shadow);
 }
 
-#headlinks>ul{
+#headlinks>ul {
     list-style: none;
     display: flex;
     flex-direction: row;
     gap: 100px;
 }
 
-#headlinks>ul>li{
+#sideheadlinks>ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+#headlinks>ul>li,
+#sideheadlinks>ul>li {
     font-weight: bold;
 }
 
-#headlinks>ul>li:hover{
+#headlinks>ul>li:hover,
+#sideheadlinks>ul>li:hover {
     color: var(--theme-pri);
     transform: scale(1.05);
 }
 
-#ctabtns{
+#ctabtns {
     display: flex;
     flex-direction: row;
     gap: 20px;
 }
 
-#ctabtns>button{
+#ctabtns>button {
     /* border-radius: 5px; */
+}
+
+#sidebar {
+    display: none;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    /* min-width: 250px; */
+    /* max-width: 500px; */
+    height: 50vh;
+    padding: 10px 50px;
+
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(2px);
+    box-shadow: 0px 0px 15px var(--theme-pri-shadow);
+}
+
+#sideheadlinks {
+    /* border: 2px solid red; */
+    /* display: none; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#sidectabtns {
+    /* display: none; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+#sidebarsec {
+    display: none;
+}
+
+#sidebarmenu {
+    height: 30px;
+}
+
+#sidebarcross {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    height: 25px;
+}
+
+#sidebarcross:hover,
+#sidebarmenu:hover {
+    transform: scale(1.1);
+}
+
+/*----------------------------------------------- Responsivness */
+
+@media screen and (max-width : 900px) {
+    #headlinks>ul {
+        gap: 50px;
+    }
+}
+
+@media screen and (max-width : 700px) {
+    #ctabtns>button {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width : 600px) {
+    #navbar {
+        padding: 30px;
+    }
+
+    #headlinks,
+    #ctabtns {
+        display: none;
+    }
+
+    #sidebarsec {
+        display: block;
+    }
 }
