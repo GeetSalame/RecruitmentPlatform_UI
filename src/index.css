@@ -69,11 +69,11 @@ body {
   background: var(--theme-bg);
 }
 
-.list li{
+.list li {
   list-style: none;
 }
 
-.inp{
+.inp {
   height: 40px;
   width: max-content;
   padding: 0 10px;

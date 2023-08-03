@@ -11,8 +11,8 @@ function Homepage() {
         <div id='homepage'>
             <Herosec />
             <Whyus />
-            <Partners />
             <Feedback />
+            <Partners />
             <Newsletter />
         </div>
     )
