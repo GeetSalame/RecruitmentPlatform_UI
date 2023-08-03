@@ -65,3 +65,37 @@ input:focus {
 #newsletter>div>button:hover {
     color: white;
 }
+
+
+
+@media screen and (max-width : 900px) {
+    #newsletter {
+        min-height: 40vh;
+    }
+
+    #newsletter>div {
+        width: 70vw;
+        padding: 8px 20px;
+    }
+    
+    #newsletter>div>button {
+        font-size: x-small;
+    }
+
+}
+
+@media screen and (max-width : 500px) {
+    #newsletter {
+        min-height: 300px;
+    }
+
+    #newsletter>div {
+        width: 90vw;
+        padding: 5px 10px;
+    }
+
+    #newsletter>div>button {
+        font-size: xx-small;
+    }
+
+}

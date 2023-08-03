@@ -26,7 +26,7 @@ function Herosec() {
             <div id="heroLeft">
                 <h1><span style={{ color: "var(--theme-pri)" }}>Recruit</span> the best</h1>
                 <h1>among <span ref={typedText} style={{ color: "var(--theme-pri)" }}></span></h1>
-                <p>where you find the perfect worker</p>
+                <p>where you find the perfect employee</p>
                 <div id="hero-cta">
                     <button className='btn'>Hire Now</button>
                     <button className='btn2'>Find Job</button>

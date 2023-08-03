@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import whyusImg from '../../../img/whyus.png';
-import cSat from '../../../img/customerSatsfaction.png';
 
 function Whyus() {
     let i = 1;
@@ -24,7 +23,7 @@ function Whyus() {
     return (
         <div id='whyusSec'>
             <div id='whyusNums'>
-                <div className="numCards" style={{ backgroundImage: cSat }}>
+                <div className="numCards">
                     <span id='clientNum'>100</span>
                     <p>Client Satisfaction</p>
                 </div>
@@ -39,9 +38,9 @@ function Whyus() {
 
             </div>
             <div id='whyusText'>
-                <img src={whyusImg} alt="" />
+                <img src={whyusImg} alt="best team" />
                 <div>
-                    <h1 className='heading' style={{ fontStyle: "italic" }}>Why Choose Us?</h1>
+                    <h1 id='whyushead' className='heading'>Why Choose Us?</h1>
                     <ul id='whyusList'>
                         <li>
                             <img src="https://cdn-icons-png.flaticon.com/512/4281/4281170.png" alt="" />

@@ -59,7 +59,7 @@
 
 /* ----------------------------------------------------- Whyus sec */
 #whyusSec {
-    width: 100vw;
+    max-width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -101,6 +101,7 @@
 
 .numCards p {
     color: white;
+    text-align: center;
 }
 
 #whyusText {
@@ -110,6 +111,10 @@
     align-items: center;
     gap: 50px;
     padding: 0 5%;
+}
+
+#whyushead {
+    font-style: italic;
 }
 
 #whyusText>img {
@@ -207,6 +212,11 @@
     box-shadow: -20px 0 13px -10px silver;
 }
 
+#feedback>div>h1 {
+    font-style: italic;
+    text-align: left;
+}
+
 .swiper {
     width: 600px;
     height: 300px;
@@ -261,3 +271,263 @@
     margin-top: auto;
     transform: rotate(180deg);
 }
+
+
+/*--------------------------------------------- Responsiveness */
+@media screen and (max-width : 1100px) {
+
+    /*------------------------------------ hero section */
+    #herosec {
+        width: max-content;
+    }
+
+    #heroLeft {
+        width: 450px;
+        margin-left: 60px;
+    }
+
+    #heroLeft h1 {
+        font-size: 30px;
+    }
+
+    #heroRight {
+        translate: -70px;
+    }
+
+    #heroRight>img {
+        width: 350px;
+    }
+
+
+    /* ----------------------------------------------------- Whyus sec */
+    #whyusSec {
+        gap: 30px;
+    }
+
+    #whyusNums {
+        gap: 50px;
+    }
+
+    .numCards {
+        gap: 20px;
+        width: 200px;
+        height: 150px;
+    }
+
+    .numCards span {
+        font-size: 30px;
+    }
+
+    .numCards p {
+        font-size: 15px;
+    }
+
+    #whyusText {
+        gap: 30px;
+    }
+
+    #whyusText>img {
+        width: 300px;
+    }
+
+    #whyushead {
+        font-size: 25px;
+    }
+
+    #whyusList {
+        gap: 30px;
+    }
+
+    #whyusList li {
+        gap: 5px;
+    }
+
+    #whyusList li p {
+        font-size: 13px;
+    }
+
+    /* ----------------------------------------------------- Feedback sec */
+
+    #feedback {
+        gap: 10px;
+        margin: 50px 100px;
+    }
+
+    #feedback>div:nth-child(1) {
+        height: 300px;
+        padding: 0 20px;
+    }
+
+    .swiper {
+        width: 500px;
+        height: 300px;
+    }
+
+    #reviewcard {
+        height: 300px;
+        width: 500px;
+        padding: 10px 20px;
+        gap: 10px;
+    }
+
+    #reviewcard img {
+        height: 40px;
+    }
+
+    #reviewLeft>h1 {
+        font-size: small;
+    }
+
+    #reviewLeft>p,
+    #reviewRight>p {
+        font-size: smaller;
+    }
+
+    #reviewRight img {
+        height: 15px;
+    }
+}
+
+
+@media screen and (max-width : 600px) {
+
+    /*------------------------------------ hero section */
+    #herosec {
+        width: max-content;
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+    
+    #heroLeft {
+        width: 90vw;
+        margin-left: 0px;
+        padding: 20px;
+        align-items: center;
+        -webkit-box-reflect: initial;
+    }
+    
+    #heroLeft h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #heroLeft p {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    #heroRight {
+        translate: -5vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #heroRight>img {
+        width: 350px;
+    }
+
+
+    /* ----------------------------------------------------- Whyus sec */
+    #whyusSec {
+        gap: 100px;
+    }
+
+    #whyusNums {
+        flex-direction: column;
+    }
+
+    .numCards {
+        gap: 10px;
+        width: 80vw;
+        height: 150px;
+    }
+
+    .numCards span {
+        font-size: 30px;
+    }
+
+    .numCards p {
+        font-size: 15px;
+    }
+
+    #whyusText {
+        padding: 0;
+        /* border: 2px solid red; */
+        width: 100vw;
+        gap: 30px;
+        flex-direction: column;
+    }
+
+    #whyusText>img {
+        width: 300px;
+    }
+
+    #whyusText>div {
+        width: 100vw;
+        text-align: center;
+    }
+
+    #whyushead {
+        font-size: 25px;
+        font-style: normal;
+    }
+
+    #whyusList li {
+        gap: 5px;
+        margin: auto;
+        width: 80vw;
+    }
+
+    /* ----------------------------------------------------- Feedback sec */
+
+    #feedback {
+        gap: 0px;
+        margin: 50px 0;
+        flex-direction: column;
+    }
+
+    #feedback>div:nth-child(1) {
+        box-shadow: none;
+        text-align: center;
+        height: 100px;
+    }
+
+    #feedback>div>h1 {
+        box-shadow: none;
+        text-align: center;
+        font-style: normal;
+    }
+
+    .swiper {
+        width: 400px;
+        height: 250px;
+    }
+
+    #reviewcard {
+        height: fit-content;
+        width: 400px;
+        padding: 10px 20px;
+        gap: 10px;
+    }
+
+    #reviewcard img {
+        height: 40px;
+    }
+
+    /* ----------------------------------------------------- Partners sec */
+    .slider {
+        margin: 0px auto;
+        height: 250px;
+    }
+
+    .partnerslider {
+        gap: 100px;
+    }
+
+    .slider .slide {
+        height: 50px;
+    }
+
+}
+

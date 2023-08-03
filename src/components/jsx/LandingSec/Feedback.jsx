@@ -15,7 +15,7 @@ function Feedback() {
         modules: [Navigation, Pagination, Autoplay],
         // Optional parameters
         autoplay: {
-            delay: 3000,
+            delay: 2000,
             disableOnInteraction: true,
         },
         loop: true,
@@ -45,7 +45,7 @@ function Feedback() {
     return (
         <div id='feedback'>
             <div>
-                <h1 className="heading" style={{ fontStyle: "italic", textAlign: "left" }}>What our <br /> Customers Say</h1>
+                <h1 className="heading">What our <br /> Customers Say</h1>
             </div>
             <div>
                 <div className="swiper">
