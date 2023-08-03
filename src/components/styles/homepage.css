@@ -11,11 +11,12 @@
 
 /*------------------------------------ hero section */
 
-#herosec>*, #herosec>*>*{
+#herosec>*,
+#herosec>*>* {
     /* border: 2px solid blue; */
 }
 
-#herosec{
+#herosec {
     /* border: 2px solid blue; */
     width: 95vw;
     height: 100vh;
@@ -25,7 +26,7 @@
     gap: 0px;
 }
 
-#heroLeft{
+#heroLeft {
     /* border: 2px solid blue; */
     display: flex;
     flex-direction: column;
@@ -34,25 +35,30 @@
     gap: 10px;
     font-size: x-large;
     width: 630px;
+    -webkit-box-reflect: below 60px linear-gradient(transparent, transparent, rgba(255, 255, 255, 0.1));
 }
 
-#hero-cta{
+#hero-cta {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     gap: 20px;
 }
 
-#heroRight{
+#heroRight {
     display: flex;
     justify-content: center;
     align-items: center;
     translate: -50px;
 }
 
+#heroRight>img {
+    -webkit-box-reflect: below -60px linear-gradient(transparent, transparent, rgba(255, 255, 255, 0.1));
+}
+
 
 /* ----------------------------------------------------- Whyus sec */
-#whyusSec{
+#whyusSec {
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -61,7 +67,7 @@
     gap: 50px;
 }
 
-#whyusNums{
+#whyusNums {
     /* height: 300px; */
     display: flex;
     justify-content: center;
@@ -70,7 +76,7 @@
     padding: 0px;
 }
 
-.numCards{
+.numCards {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -80,17 +86,24 @@
     border-radius: 5px;
     width: 300px;
     height: 200px;
+    background: url("../../img/customerSatsfaction.png") repeat fixed center center;
 }
-.numCards:hover{
+
+.numCards:hover {
     /* transform: scale(1.1); */
 }
 
-.numCards span{
+.numCards span {
     font-size: 50px;
-    color: var(--theme-pri);
+    /* color: var(--theme-pri); */
+    color: aqua;
 }
 
-#whyusText{
+.numCards p {
+    color: white;
+}
+
+#whyusText {
     /* border: 2px solid red; */
     display: flex;
     justify-content: center;
@@ -99,7 +112,7 @@
     padding: 0 5%;
 }
 
-#whyusList{
+#whyusList {
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -107,12 +120,54 @@
     margin: 30px 0 10px;
 }
 
-#whyusList li{
+#whyusList li {
     display: flex;
     gap: 10px;
     width: 40vw;
 }
 
-#whyusList li img{
+#whyusList li img {
     height: 20px;
 }
+
+/* ----------------------------------------------------- Partners sec */
+@keyframes scroll{
+    0%{
+        transform: translateX(50px);
+    }
+    100%{
+        transform: translateX(calc(-100px * 10));
+    }
+}
+
+.slider{
+    height: 300px;
+    margin: auto;
+    width: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider h1{
+    margin: 50px 0;
+    text-align: center;
+    width: 100vw;
+}
+
+.slider .partnerslider{
+    animation: scroll 50s linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+}
+
+.partnerslider{
+    gap: 200px;
+    margin: 50px 0;
+}
+
+.slider .slide{
+    height: 100px;
+    width: auto;
+}
+
+/* ----------------------------------------------------- Feedback sec */

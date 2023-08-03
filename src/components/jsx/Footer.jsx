@@ -9,9 +9,9 @@ function Footer() {
                     <h1 className="heading">Recruit</h1>
                     <ul id='footerLinks'>
                         <li><img src="https://cdn-icons-png.flaticon.com/512/733/733635.png" alt="twitter" /></li>
+                        <li><img src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png" alt="linkedin" /></li>
                         <li><img src="https://cdn-icons-png.flaticon.com/512/1384/1384005.png" alt="fb" /></li>
                         <li><img src="https://cdn-icons-png.flaticon.com/512/4494/4494468.png" alt="insta" /></li>
-                        <li><img src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png" alt="linkedin" /></li>
                         <li><img src="https://cdn-icons-png.flaticon.com/512/4494/4494467.png" alt="youtube" /></li>
                     </ul>
                 </div>
@@ -50,7 +50,7 @@ function Footer() {
                     </div>
                 </div>
             </div>
-            <div id='footerBottom' style={{ textAlign: "center",marginTop:"50px", color:"white" }}>
+            <div id='footerBottom' style={{ textAlign: "center",marginTop:"50px", color:"silver" }}>
                 <p>Copyright © 2023 Recruit. All rights reserved.</p>
             </div>
         </div>

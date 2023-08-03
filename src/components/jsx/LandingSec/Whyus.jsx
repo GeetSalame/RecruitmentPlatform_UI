@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import whyusImg from '../../../img/whyus.png';
+import cSat from '../../../img/customerSatsfaction.png';
 
 function Whyus() {
     let i = 1;
@@ -23,7 +24,7 @@ function Whyus() {
     return (
         <div id='whyusSec'>
             <div id='whyusNums'>
-                <div className="numCards">
+                <div className="numCards" style={{ backgroundImage: cSat }}>
                     <span id='clientNum'>100</span>
                     <p>Client Satisfaction</p>
                 </div>

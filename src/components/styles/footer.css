@@ -1,8 +1,8 @@
 #footer {
     /* border: 2px solid red; */
-    background: linear-gradient(160deg, white, rgb(145, 128, 255), var(--theme-pri));
+    /* background: linear-gradient(160deg, white, #004e923e, var(--theme-pri)) no-repeat fixed center center; */
     width: 100vw;
-    padding: 2% 7%;
+    padding: 5% 7%;
     display: flex;
     flex-direction: column;
 }
@@ -39,7 +39,7 @@
 
 #footerURight li {
     margin-top: 10px;
-    color: white;
+    /* color: white; */
 }
 
 #footerURight li:hover {

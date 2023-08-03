@@ -50,6 +50,7 @@ font-family: 'Roboto', sans-serif; */
   border-radius: 5px;
   padding: 10px 30px;
   font-family: 'Raleway', sans-serif;
+  letter-spacing: .1rem;
 }
 
 .btn2,
@@ -60,6 +61,7 @@ font-family: 'Roboto', sans-serif; */
   border: 2px solid var(--theme-pri);
   border-radius: 5px;
   padding: 10px 30px;
+  letter-spacing: .1rem;
   font-family: 'Raleway', sans-serif;
 }
 
@@ -69,4 +71,10 @@ body {
 
 .list li{
   list-style: none;
+}
+
+.inp{
+  height: 40px;
+  width: max-content;
+  padding: 0 10px;
 }
